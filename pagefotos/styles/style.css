@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #FEF9E1 ;
+    --cor-secundaria: #E5D0AC;
+    --cor-terciaria: #6D2323;
+
+    --font-primaria: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.cabecalho{ /*medidas de margem, usar % para um melhor desempenho do que em px */
+    padding: 0% 0% 0% 15%;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-primaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.presente{ /*Main class */
+    margin-bottom: 48px;
+    border-top: 0.4px solid var(--cor-secundaria); /*linha reta para divisão */
+    margin: 16px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presente__conteudo{ /* section da classe principal*/
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Adiciona espaço entre os itens */
+    gap: 20px;  /* Espaço entre o texto e a imagem */
+}
+
+.presente__conteudo__titulo{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 56px;
+    font-family: var(--font-primaria);
+}
+
+.imagem__principal{
+    height: 430px;
+    width: auto;
+}
+
+
+.carta__conteudo{ /*section do paragrafo */
+    border-top: 0.4px solid var(--cor-secundaria);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presente__conteudo__texto{
+    
+    width: 100%;
+    font-size: 24px;
+    font-family: var(--font-primaria);
+}
+
+.fotos__conteudo{
+    border-top: 0.4px solid var(--cor-secundaria);
+    margin-top: 50px;
+    margin: 16px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nossas__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.nossas__fotos__1{
+    height: 430px;
+    width: auto;
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color:var(--cor-secundaria);
+    text-align: center; /*alinhar texto*/
+    font-family: var(--font-primaria);
+    font-size: 24px;
+    font-weight: 400;
+}
