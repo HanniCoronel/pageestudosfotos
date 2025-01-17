@@ -20,7 +20,7 @@ body{
     color: var(--cor-terciaria);
 }
 
-.cabecalho{ /*medidas de margem, usar % para um melhor desempenho do que em px */
+.cabecalho{ /*medidas de margem, usar % para um melhor desempenho do que em px333 */
     padding: 0% 0% 0% 15%;
     flex-direction: row;
     align-items: center;
